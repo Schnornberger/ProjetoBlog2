@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="prof. Marnei Cardoso">
@@ -9,13 +10,19 @@
     <title>Buenas News</title>
     <!-- Ícone da página -->
     <link rel="shortcut icon" href="./img/icone.png" type="image/x-icon">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- CSS Externo -->
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <span>Bonjour</span> News
+            <span>Buenas</span> News
         </div>
 
         <!-- Menu -->
@@ -26,98 +33,102 @@
                 <li><a href="">FILMES</a></li>
                 <li><a href="">POLITICA</a></li>
             </ul>
-            
+
         </nav>
 
         <!-- Menu Responsivo -->
-         <nav class="menu-responsivo">
-            <i class="bx bx-menu"></i>
-         </nav>
+        <nav class="menu-responsivo">
 
+            <input type="checkbox" id="menu-toggle">
 
+            <label for="menu-toggle" class="menu-button">
+                <i class="bx bx-menu"></i>
+            </label>
+            
+            <div class="menu-content">
+                <ul>
+
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ESPORTES</a></li>
+                    <li><a href="">FILMES</a></li>
+                    <li><a href="">POLITICA</a></li>
+
+                </ul>
+                <!-- toggle significa interruptor -->
+                <!-- li*4 > a para criar mais rapido -->
+
+            </div>
+        </nav>
     </header>
 
-    <main> 
-      <!-- Noticia 1 -->
-       <article>
-        <div class="foto">
-            <img src="./img/noticia-01.jpg" alt="Israel e Hezbollah trocam ataques aéreos">
-        </div>
+    <main>
+        <!-- Noticia 1 -->
+        <article>
+            <div class="foto">
+                <img src="./img/noticia-01.jpg" alt="Israel e Hezbollah trocam ataques aéreos">
+            </div>
 
-        <div class="conteudo">    
-            <span>
-                <h3>Israel e Hezbollah trocam ataques aéreos</h3>
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, modi!</p>
-            </span>
-            <p class="leia-mais"> leia mais></p>
+            <div class="conteudo">
+                <span>
+                    <h3>Israel e Hezbollah trocam ataques aéreos</h3>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, modi!</p>
+                </span>
 
+                <p class="leia-mais"> leia mais></p>
+            </div>
+        </article>
 
-        </div>
+        <!-- Noticia 2 -->
+        <article>
+            <div class="foto">
+                <img src="./img/noticia-02.jpg" alt="Eleições do USA: O que é voto facultativo e por que ele é adotado">
+            </div>
 
-        
-       </article>
+            <div class="conteudo">
+                <span>
+                    <h3>Eleições do USA: O que é voto facultativo e por que ele é adotado</h3>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, modi!</p>
+                </span>
 
-       <!-- Noticia 2 -->
-       <article>
-        <div class="foto">
-            <img src="./img/noticia-02.jpg" alt="Eleições do USA: O que é voto facultativo e por que ele é adotado">
-        </div>
-
-        <div class="conteudo">    
-            <span>
-                <h3>Eleições do USA: O que é voto facultativo e por que ele é adotado</h3>
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, modi!</p>
-            </span>
-            <p class="leia-mais"> leia mais></p>
-
-
-        </div>
-
-        
-       </article>
-
-       
-       <!-- Noticia 3 -->
-       <article>
-        <div class="foto">
-            <img src="./img/noticia-03.jpg" alt="Capivara brasileira foge em zoologico na Inglaterra">
-        </div>
-
-        <div class="conteudo">    
-            <span>
-                <h3>Capivara brasileira foge em zoologico na Inglaterra</h3>
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, modi!</p>
-            </span>
-            <p class="leia-mais"> leia mais></p>
+                <p class="leia-mais"> leia mais></p>
+            </div>
+        </article>
 
 
-        </div>
+        <!-- Noticia 3 -->
+        <article>
+            <div class="foto">
+                <img src="./img/noticia-03.jpg" alt="Capivara brasileira foge em zoologico na Inglaterra">
+            </div>
 
-        
-       </article>
+            <div class="conteudo">
+                <span>
+                    <h3>Capivara brasileira foge em zoologico na Inglaterra</h3>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, modi!</p>
+                </span>
+
+                <p class="leia-mais"> leia mais></p>
+            </div>
+        </article>
 
         <!-- Noticia 4  -->
         <article>
             <div class="foto">
                 <img src="./img/noticia-04.jpg" alt="IOS 18 está liberado para usuários">
             </div>
-    
-            <div class="conteudo">    
+
+            <div class="conteudo">
                 <span>
                     <h3>IOS 18 está liberado para usuários</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, modi!</p>
                 </span>
                 <p class="leia-mais"> leia mais></p>
-    
-    
             </div>
-    
-            
-           </article>
-       
+        </article>
 
     </main>
 
     <footer>Bonjour News &copy; Nenhum direito reservado 2024</footer>
 </body>
+
 </html>
